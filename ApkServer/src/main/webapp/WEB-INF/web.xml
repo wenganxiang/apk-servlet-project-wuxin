@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="GBK"?>
+<web-app id="WebApp_ID" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+    http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+	<display-name>ApkServer</display-name>
+	<welcome-file-list>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<context-param>
+		<param-name>mysqlDriver</param-name>
+		<param-value>com.mysql.jdbc.Driver</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>wuxinUrl</param-name>
+		<param-value>jdbc:mysql://localhost:3306/wuxin?useUnicode=true&amp;characterEncoding=gbk&amp;serverTimezone=UTC</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>user</param-name>
+		<param-value>root</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>pass</param-name>
+		<param-value>5Pxlzdlls</param-value>
+	</context-param>
+
+	<servlet>
+		<servlet-name>DbService</servlet-name>
+		<servlet-class>com.wuxin.enroll.DbService</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>DbService</servlet-name>
+		<url-pattern>/DbService</url-pattern>
+	</servlet-mapping>
+	
+	<listener>
+		<listener-class>com.wuxin.enroll.DbConnListener</listener-class>
+	</listener>
+</web-app>
