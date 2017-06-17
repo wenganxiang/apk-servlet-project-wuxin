@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="@color/whites" >
+
+    <View
+        android:id="@+id/cutline1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/devide_line" >
+    </View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/school_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="5dp"
+            android:text="学校"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/region"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/school_name"
+            android:layout_toRightOf="@+id/school_name"
+            android:paddingLeft="5dp"
+            android:text="地区"
+            android:textColor="@color/gray_font"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/oldmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/school_name"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:paddingLeft="5dp"
+            android:text="16年最低分"
+            android:textColor="@color/gray_font"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/oldorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/oldmin"
+            android:layout_toRightOf="@+id/oldmin"
+            android:gravity="center_horizontal"
+            android:paddingLeft="5dp"
+            android:text="16年最低排名"
+            android:textColor="@color/gray_font"
+            android:textSize="10dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/cutline2"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/devide_line" >
+    </View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/reson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_horizontal"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="3dp"
+            android:text="推荐理由"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <View
+            android:id="@+id/cutline3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/reson"
+            android:background="@color/devide_line" >
+        </View>
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cutline3"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_bg_1st"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="本科第一批 "
+            android:textColor="@color/black"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/type"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/type"
+            android:background="@drawable/text_bg_1st"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="录取概率 "
+            android:textColor="@color/black"
+            android:textSize="11dp" />
+
+        <ImageView
+            android:id="@+id/iconRight"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/cutline3"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/become_vip" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/cutline4"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/devide_line" >
+    </View>
+
+    <TextView
+        android:id="@+id/recommend_major"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="3dp"
+        android:text="推荐专业"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <View
+        android:id="@+id/cutline5"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/devide_line" >
+    </View>
+
+</LinearLayout>

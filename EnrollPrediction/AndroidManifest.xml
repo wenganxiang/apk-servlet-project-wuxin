@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="wuxin.enroll.prediction"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="wuxin.enroll.prediction.WebActivity" >
+            <intent-filter>
+                <action android:name="wuxin.enroll.prediction.WebActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="wuxin.enroll.prediction.GKScoreActivity" >
+            <intent-filter>
+                <action android:name="wuxin.enroll.prediction.GKScoreActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="wuxin.enroll.prediction.GKClassActivity"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="wuxin.enroll.prediction.GKClassActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+                <activity android:name="wuxin.enroll.prediction.PredictResultActivity" >
+            <intent-filter>
+                <action android:name="wuxin.enroll.prediction.PredictResultActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="wuxin.enroll.prediction.login.ProchActivity" >
+            <intent-filter>
+                <action android:name="wuxin.enroll.prediction.login.ProchActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="wuxin.enroll.prediction.login.LoginActivity" >
+            <intent-filter>
+                <action android:name="wuxin.enroll.prediction.login.LoginActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="wuxin.enroll.prediction.login.RegisterPhoneActivity" >
+            <intent-filter>
+                <action android:name="wuxin.enroll.prediction.login.RegisterPhoneActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="wuxin.enroll.prediction.login.RegisterUserInfoActivity" >
+            <intent-filter>
+                <action android:name="wuxin.enroll.prediction.login.RegisterUserInfoActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="wuxin.enroll.prediction.login.RegisterResultActivity" >
+            <intent-filter>
+                <action android:name="wuxin.enroll.prediction.login.RegisterResultActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="wuxin.enroll.prediction.login.FindPassActivity" >
+            <intent-filter>
+                <action android:name="wuxin.enroll.prediction.login.FindPassActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="wuxin.enroll.prediction.login.ChangePassActivity" >
+            <intent-filter>
+                <action android:name="wuxin.enroll.prediction.login.ChangePassActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

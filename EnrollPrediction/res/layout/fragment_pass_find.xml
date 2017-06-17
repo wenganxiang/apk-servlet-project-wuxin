@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/login_picture"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/login_picture_bg"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_launcher" />
+
+    <RelativeLayout
+        android:id="@+id/rl_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_picture" >
+
+        <LinearLayout
+            android:id="@+id/ll_user_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/register_phone_bg"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/findPasswId_tx_li"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/register_phone_bg" >
+
+                <EditText
+                    android:id="@+id/findPasswId"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@null"
+                    android:hint="输入手机号码"
+                    android:padding="5dp"
+                    android:textColorHint="#CDCDC1"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/findPasswIdText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:text="用户不存在"
+                    android:textColor="#ff0000"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/findPasswAuth_tx_li"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/findPasswAuth"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@null"
+                    android:hint="输入验证码"
+                    android:padding="5dp"
+                    android:textColorHint="#CDCDC1"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/start_find"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/ll_user_info"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/login_btn_bg"
+            android:text="确认"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center_horizontal"
+        android:text="你已成功注册账号！"
+        android:textColor="@color/gray_font"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/account_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:text="账号：手机号"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/register_success"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/login_btn_bg"
+        android:text="开始选志愿"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/id_ly_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ly_topbar" />
+
+    <TextView
+        android:id="@+id/cutline1"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="#ebebeb" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <ImageView
+                android:id="@+id/headImg"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="0.3"
+                android:src="@drawable/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="0.7"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/loginAlert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="登录获得更多功能"
+                    android:textSize="16dp" />
+
+                <RelativeLayout
+                    android:id="@+id/login_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+
+                    <Button
+                        android:id="@+id/loginBtn"
+                        android:layout_width="90dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/me_btn_bg"
+                        android:text="登录" />
+
+                    <Button
+                        android:id="@+id/registerBtn"
+                        android:layout_width="90dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_toRightOf="@+id/loginBtn"
+                        android:background="@drawable/me_btn_bg"
+                        android:text="注册" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cutline2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/alarmImg"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/gaokaoLimit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/alarmImg"
+                android:text="距离高考还有n天"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cutline3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ebebeb" />
+
+    <ListView
+        android:id="@+id/me_comm_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ebebeb" />
+
+</LinearLayout>

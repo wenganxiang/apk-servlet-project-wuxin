@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="5dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:id="@+id/iconLeft"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/become_vip" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iconRight"
+            android:layout_toRightOf="@+id/iconLeft" >
+
+            <TextView
+                android:id="@+id/school"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:text="学校"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/region"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/school"
+                android:layout_toRightOf="@+id/school"
+                android:paddingLeft="5dp"
+                android:text="所在地"
+                android:textColor="@color/gray_font"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/school"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:paddingLeft="5dp"
+                android:text="本科第一批（工科）"
+                android:textColor="@color/gray_font"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/oldLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/type"
+                android:layout_toRightOf="@+id/type"
+                android:gravity="center_horizontal"
+                android:paddingLeft="5dp"
+                android:text="16年最低分 "
+                android:textColor="@color/gray_font"
+                android:textSize="10dp" />
+            <TextView
+                android:id="@+id/rateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/type"
+                android:layout_toRightOf="@+id/oldLine"
+                android:gravity="center_horizontal"
+                android:paddingLeft="10dp"
+                android:text="录取概率 "
+                android:textColor="@color/gray_font"
+                android:textSize="10dp" />
+            <TextView
+                android:id="@+id/rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/type"
+                android:layout_toRightOf="@+id/rateText"
+                android:gravity="center_horizontal"
+                android:text="概率 "
+                android:textColor="@color/gray_font"
+                android:textSize="10dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iconRight"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/become_vip" />
+    </RelativeLayout>
+
+</LinearLayout>

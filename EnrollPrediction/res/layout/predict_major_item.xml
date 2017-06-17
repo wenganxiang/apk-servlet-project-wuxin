@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="5dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/major"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="5dp"
+            android:text="专业"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/major"
+            android:layout_toRightOf="@+id/major"
+            android:paddingLeft="5dp"
+            android:text="学校"
+            android:textColor="@color/gray_font"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/oldavg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/major"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:paddingLeft="5dp"
+            android:text="15年平均分"
+            android:textColor="@color/gray_font"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/oldmax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/oldavg"
+            android:layout_toRightOf="@+id/oldavg"
+            android:gravity="center_horizontal"
+            android:paddingLeft="5dp"
+            android:text="15年最高分 "
+            android:textColor="@color/gray_font"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/rateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/oldavg"
+            android:layout_toRightOf="@+id/oldmax"
+            android:gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:text="录取概率 "
+            android:textColor="@color/gray_font"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/oldavg"
+            android:layout_toRightOf="@+id/rateText"
+            android:gravity="center_horizontal"
+            android:text="概率 "
+            android:textColor="@color/gray_font"
+            android:textSize="10dp" />
+    </RelativeLayout>
+
+</LinearLayout>

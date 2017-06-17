@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/changePwUser"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/login_picture_bg"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:id="@+id/changePwli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/changePwUser"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/register_phone_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/changePwId_tx_li"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/changePwId"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="sdaskdjhc"
+                android:textColorHint="#CDCDC1"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/registerline0"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#D7D7D7"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/changePwAuth_tx_li"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/changePwNew"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:hint="输入新密码"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:textColorHint="#CDCDC1"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/registerline2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#D7D7D7"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/changePwAuth_again_tx_li"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/changePwNewAgain"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:hint="确认新密码"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:textColorHint="#CDCDC1"
+                android:textSize="16dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/start_change"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/changePwli"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/login_btn_bg"
+        android:text="确认修改"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
